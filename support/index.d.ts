@@ -345,14 +345,14 @@ declare namespace Cypress {
     confirmMetamaskTransactionAndWaitForMining(
       gasConfig?:
         | {
-        gasLimit?: number;
-        baseFee?: number;
-        priorityFee?: number;
-      }
+            gasLimit?: number;
+            baseFee?: number;
+            priorityFee?: number;
+          }
         | {
-        gasLimit?: number;
-        gasPrice?: number;
-      }
+            gasLimit?: number;
+            gasPrice?: number;
+          }
         | 'low'
         | 'market'
         | 'aggressive'
@@ -486,5 +486,37 @@ declare namespace Cypress {
       viewportWidth: number,
       viewportHeight: number,
     ): Chainable<Subject>;
+
+    // CUSTOM COMMANDS WIP
+    getExpectInstance(): Chainable<Subject>;
+    browser(): Chainable<Subject>;
+    mainWindow(): Chainable<Subject>;
+    metamaskWindow(): Chainable<Subject>;
+    metamaskNotificationWindow(): Chainable<Subject>;
+    metamaskPopupWindow(): Chainable<Subject>;
+    activeTabName(): Chainable<Subject>;
+    setExpectInstance(): Chainable<Subject>;
+    clear(): Chainable<Subject>;
+    assignWindows(): Chainable<Subject>;
+    assignActiveTabName(): Chainable<Subject>;
+    clearWindows(): Chainable<Subject>;
+    waitFor(): Chainable<Subject>;
+    waitAndClick(): Chainable<Subject>;
+    waitAndClickByText(): Chainable<Subject>;
+    waitAndType(): Chainable<Subject>;
+    waitAndGetValue(): Chainable<Subject>;
+    waitAndGetInputValue(): Chainable<Subject>;
+    waitAndGetAttributeValue(): Chainable<Subject>;
+    waitAndSetValue(): Chainable<Subject>;
+    waitAndClearWithBackspace(): Chainable<Subject>;
+    waitClearAndType(): Chainable<Subject>;
+    waitForText(): Chainable<Subject>;
+    waitToBeHidden(): Chainable<Subject>;
+    waitUntilStable(): Chainable<Subject>;
+    waitUntilNotificationWindowIsStable(): Chainable<Subject>;
+    waitUntilMetamaskWindowIsStable(): Chainable<Subject>;
+    fixBlankPage(): Chainable<Subject>;
+    fixCriticalError(): Chainable<Subject>;
+    getExtensionsData(): Chainable<Subject>;
   }
 }

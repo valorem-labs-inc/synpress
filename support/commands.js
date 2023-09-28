@@ -35,6 +35,89 @@ Cypress.Commands.add('switchToMetamaskNotification', () => {
   return cy.task('switchToMetamaskNotification');
 });
 
+// patch exported playwright commands
+Cypress.Commands.add('getExpectInstance', () => {
+  return cy.task('getExpectInstance');
+});
+Cypress.Commands.add('browser', () => {
+  return cy.task('browser');
+});
+Cypress.Commands.add('mainWindow', () => {
+  return cy.task('mainWindow');
+});
+Cypress.Commands.add('metamaskWindow', () => {
+  return cy.task('metamaskWindow');
+});
+Cypress.Commands.add('metamaskNotificationWindow', () => {
+  return cy.task('metamaskNotificationWindow');
+});
+Cypress.Commands.add('metamaskPopupWindow', () => {
+  return cy.task('metamaskPopupWindow');
+});
+Cypress.Commands.add('activeTabName', () => {
+  return cy.task('activeTabName');
+});
+Cypress.Commands.add('setExpectInstance', () => {
+  return cy.task('setExpectInstance');
+});
+// Cypress.Commands.overwrite('clear', () => {
+//   return cy.task('clear');
+// });
+// Cypress.Commands.overwrite('waitFor', () => {
+//   return cy.task('waitFor');
+// });
+Cypress.Commands.add('waitAndClick', () => {
+  return cy.task('waitAndClick');
+});
+Cypress.Commands.add('waitAndClickByText', () => {
+  return cy.task('waitAndClickByText');
+});
+Cypress.Commands.add('waitAndType', () => {
+  return cy.task('waitAndType');
+});
+Cypress.Commands.add('waitAndGetValue', () => {
+  return cy.task('waitAndGetValue');
+});
+Cypress.Commands.add('waitAndGetInputValue', () => {
+  return cy.task('waitAndGetInputValue');
+});
+Cypress.Commands.add('waitAndGetAttributeValue', () => {
+  return cy.task('waitAndGetAttributeValue');
+});
+Cypress.Commands.add('waitAndSetValue', () => {
+  return cy.task('waitAndSetValue');
+});
+Cypress.Commands.add('waitAndClearWithBackspace', () => {
+  return cy.task('waitAndClearWithBackspace');
+});
+Cypress.Commands.add('waitClearAndType', () => {
+  return cy.task('waitClearAndType');
+});
+Cypress.Commands.add('waitForText', () => {
+  return cy.task('waitForText');
+});
+Cypress.Commands.add('waitToBeHidden', () => {
+  return cy.task('waitToBeHidden');
+});
+Cypress.Commands.add('waitUntilStable', () => {
+  return cy.task('waitUntilStable');
+});
+Cypress.Commands.add('waitUntilNotificationWindowIsStable', () => {
+  return cy.task('waitUntilNotificationWindowIsStable');
+});
+Cypress.Commands.add('waitUntilMetamaskWindowIsStable', () => {
+  return cy.task('waitUntilMetamaskWindowIsStable');
+});
+Cypress.Commands.add('fixBlankPage', () => {
+  return cy.task('fixBlankPage');
+});
+Cypress.Commands.add('fixCriticalError', () => {
+  return cy.task('fixCriticalError');
+});
+Cypress.Commands.add('getExtensionsData', () => {
+  return cy.task('getExtensionsData');
+});
+
 // metamask commands
 
 Cypress.Commands.add('addMetamaskNetwork', network => {
